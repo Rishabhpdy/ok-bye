@@ -1,0 +1,84 @@
+.sun {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 500px;
+    margin-top: -250px; 
+    margin-left: -250px; /*sun in the center */
+    background: red;
+    border-radius: 50%;
+    box-shadow: 0 0 50px #ff0;
+   
+}
+
+
+
+.orbitearth {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1000px; 
+    height: 1000px; 
+    margin-top: -500px; 
+    margin-left: -500px; /* orbit around sun */
+    border-radius: 50%;
+    animation: orbit 15s linear infinite;
+
+}
+
+@keyframes orbit {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.earth {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    margin-top: -100px; /*  center earth */
+    margin-left: 400px; 
+    background: rgb(49, 29, 231);
+    border-radius: 50%;
+    box-shadow: 0 0 50px rgb(207, 207, 224);
+}
+
+.moonorbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px; /*  orbit path around earth */
+    height: 300px; 
+    margin-top: -150px; 
+    margin-left: -150px; 
+    border-radius: 50%;
+    animation: moonorbit 5s linear infinite;
+}
+
+@keyframes moonorbit {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.moon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    margin-top: -50px; 
+    margin-left: 150px; /*   orbit path put moon*/
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    box-shadow: 0 0 50px rgb(255, 255, 255);
+}
